@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ParejasCartas</string>
+    <string name="button_jugar">Jugar</string>
+    <string name="button_salir">Salir</string>
+    <string name="botonReset">Reiniciar</string>
+    <string name="botonSalir">Salir</string>
+</resources>
