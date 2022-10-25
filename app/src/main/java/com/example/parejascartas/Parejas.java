@@ -75,6 +75,11 @@ public class Parejas extends Activity {
             }
         });
     }
+
+    /**
+     * Se asignan las imágenes a las variables declaradas (son tipo int
+     * debido a que guardan su id)
+     */
     private void cargarImgs(){
         imgs = new int[]{
                 R.drawable.c1,
@@ -88,7 +93,7 @@ public class Parejas extends Activity {
     /**
      * Método que desordena las cartas con un ArrayList
      * @param l longitud del array de imágenes
-     * @return
+     * @return devuelve el array desordenado
      */
     private ArrayList<Integer> randomizar(int l){
         ArrayList<Integer> result = new ArrayList<Integer>();
@@ -102,6 +107,15 @@ public class Parejas extends Activity {
         Collections.shuffle(result);
         return result;
     }
+
+    /**
+     * En este método comprueba:
+     * 1. Si se pulsa la primera carta de una pareja
+     * 2. Si se ha acertado (numUno == numDos)
+     * 3. Que no se pulsen más de dos cartas a la vez
+     * @param i
+     * @param ib botón seleccionado
+     */
     private void comprobar(int i, ImageButton ib){
         //
         if(primero == null){
