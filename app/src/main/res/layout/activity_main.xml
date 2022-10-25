@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <RelativeLayout
+        android:id="@+id/rootRL"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/sonicbueno"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"></RelativeLayout>
+
     <Button
         android:id="@+id/buttonJugar"
         android:layout_width="wrap_content"
@@ -13,7 +24,6 @@
         android:layout_marginStart="158dp"
         android:layout_marginTop="150dp"
         android:layout_marginEnd="159dp"
-        android:layout_marginBottom="133dp"
         android:text="@string/button_jugar"
         app:layout_constraintBottom_toTopOf="@+id/buttonSalir"
         app:layout_constraintEnd_toEndOf="parent"
@@ -25,7 +35,6 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="159dp"
-        android:layout_marginTop="133dp"
         android:layout_marginEnd="158dp"
         android:layout_marginBottom="352dp"
         android:text="@string/button_salir"

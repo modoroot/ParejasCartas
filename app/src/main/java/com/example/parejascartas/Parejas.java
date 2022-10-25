@@ -32,6 +32,8 @@ public class Parejas extends Activity {
     int numUno, numDos;
     //para que no se ralle y no se pulsen demás cartas
     boolean bloquearCartas = false;
+    //para que tenga un pequeño delay para ver la carta errónea
+    //seleccionada
     final Handler handler = new Handler();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
